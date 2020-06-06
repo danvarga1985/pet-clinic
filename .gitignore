@@ -70,7 +70,6 @@ local.properties
 ######################
 /log/
 /target/
-
 ######################
 # Gradle
 ######################
@@ -81,6 +80,7 @@ local.properties
 # Package Files
 ######################
 *.jar
+*.original
 *.war
 *.ear
 *.db
