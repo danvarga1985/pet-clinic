@@ -17,7 +17,7 @@
 
     <groupId>daniel.varga</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>pet-clinic</name>
     <description>Own implementation of the Spring Pet Clinic project.</description>
 
