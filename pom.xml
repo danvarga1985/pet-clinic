@@ -17,7 +17,7 @@
 
     <groupId>daniel.varga</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>pet-clinic</name>
     <description>Own implementation of the Spring Pet Clinic project.</description>
 
@@ -45,7 +45,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:danvarga1985/pet-clinic.git</developerConnection>
-        <tag>pet-clinic-0.0.2</tag>
+        <tag>pet-clinic-0.0.1</tag>
     </scm>
 
 </project>
