@@ -1,5 +1,14 @@
+/home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/services/map/OwnerServiceMap.java
+/home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/services/VetService.java
 /home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/model/Vet.java
+/home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/services/map/VetServiceMap.java
+/home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/services/map/PetServiceMap.java
+/home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/model/BaseEntity.java
+/home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/services/PetService.java
 /home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/model/Owner.java
+/home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/services/CrudService.java
+/home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/services/OwnerService.java
 /home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/model/Pet.java
+/home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/services/map/AbstractMapService.java
 /home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/model/Person.java
 /home/danielvarga/Work/Spring/pet-clinic/pet-clinic-data/src/main/java/daniel/varga/petclinic/model/PetType.java
