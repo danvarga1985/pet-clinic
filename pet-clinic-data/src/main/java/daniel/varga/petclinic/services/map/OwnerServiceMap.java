@@ -1,12 +1,11 @@
 package daniel.varga.petclinic.services.map;
 
-import com.sun.xml.bind.v2.model.core.ID;
 import daniel.varga.petclinic.model.Owner;
-import daniel.varga.petclinic.services.CrudService;
+import daniel.varga.petclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -32,5 +31,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
