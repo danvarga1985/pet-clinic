@@ -1,6 +1,6 @@
 package daniel.varga.petclinic.model;
 
-public class PetType extends  BaseEntity {
+public class PetType extends BaseEntity {
 
     private String name;
 
