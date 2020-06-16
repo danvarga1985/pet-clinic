@@ -1,6 +1,7 @@
 package daniel.varga.petclinic.bootstrap;
 
 import daniel.varga.petclinic.model.Owner;
+import daniel.varga.petclinic.model.Pet;
 import daniel.varga.petclinic.model.PetType;
 import daniel.varga.petclinic.model.Vet;
 import daniel.varga.petclinic.services.OwnerService;
@@ -8,6 +9,8 @@ import daniel.varga.petclinic.services.PetTypeService;
 import daniel.varga.petclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDate;
 
 @Component
 public class DataInitializer implements CommandLineRunner {
@@ -33,16 +36,36 @@ public class DataInitializer implements CommandLineRunner {
         cat.setName("Cat");
         PetType savedCatPetType = petTypeService.save(cat);
 
-
         Owner owner1 = new Owner();
         owner1.setFirstName("Terry");
         owner1.setLastName("Davis");
+        owner1.setAddress("132 Mulberry");
+        owner1.setCity("Mobile");
+        owner1.setPhone("3242342");
+
+        Pet terrysDog = new Pet();
+        terrysDog.setPetType(savedDogPetType);
+        terrysDog.setOwner(owner1);
+        terrysDog.setName("Preacher");
+        terrysDog.setBirthDate(LocalDate.now());
+        owner1.getPets().add(terrysDog);
+
 
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Sylvester");
         owner2.setLastName("Matuska");
+        owner1.setAddress("14 Kossuth");
+        owner1.setCity("Kisoroszi");
+        owner1.setPhone("32132154");
+
+        Pet sylvestersCat = new Pet();
+        sylvestersCat.setPetType(savedCatPetType);
+        sylvestersCat.setOwner(owner2);
+        sylvestersCat.setName("Anfang");
+        sylvestersCat.setBirthDate(LocalDate.now());
+        owner2.getPets().add(sylvestersCat);
 
         ownerService.save(owner2);
 
