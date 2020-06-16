@@ -6,10 +6,6 @@ public class Owner extends Person {
 
     private Set<Pet> pets;
 
-    public Owner(Set<Pet> pets) {
-        this.pets = pets;
-    }
-
     public Set<Pet> getPets() {
         return pets;
     }
