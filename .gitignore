@@ -1,4 +1,3 @@
-HELP.md
 ######################
 # Project Specific
 ######################
@@ -70,6 +69,7 @@ local.properties
 ######################
 /log/
 /target/
+
 ######################
 # Gradle
 ######################
@@ -80,7 +80,6 @@ local.properties
 # Package Files
 ######################
 *.jar
-*.original
 *.war
 *.ear
 *.db
@@ -112,7 +111,13 @@ Desktop.ini
 ######################
 /bin/
 /deploy/
-
+*/target/**
+*/target/*
+pet-clinic-web/target/
+/pet-clinic-web/target/
+pet-clinic-web/target/*
+/pet-clinic-web/target/*
+target/*
 ######################
 # Logs
 ######################
@@ -140,3 +145,21 @@ Desktop.ini
 # ESLint
 ######################
 .eslintcache
+
+
+target/*
+.settings/*
+.classpath
+.project
+.factorypath
+.attach_pid*
+.idea
+*.iml
+/target
+.sts4-cache/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+_site/
