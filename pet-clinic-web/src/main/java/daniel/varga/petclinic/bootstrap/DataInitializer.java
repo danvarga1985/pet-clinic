@@ -1,8 +1,10 @@
 package daniel.varga.petclinic.bootstrap;
 
 import daniel.varga.petclinic.model.Owner;
+import daniel.varga.petclinic.model.PetType;
 import daniel.varga.petclinic.model.Vet;
 import daniel.varga.petclinic.services.OwnerService;
+import daniel.varga.petclinic.services.PetTypeService;
 import daniel.varga.petclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -12,14 +14,26 @@ public class DataInitializer implements CommandLineRunner {
 
     private final VetService vetService;
     private final OwnerService ownerService;
+    private final PetTypeService petTypeService;
 
-    public DataInitializer(VetService vetService, OwnerService ownerService) {
+    public DataInitializer(VetService vetService, OwnerService ownerService, PetTypeService petTypeService) {
         this.vetService = vetService;
         this.ownerService = ownerService;
+        this.petTypeService = petTypeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
+
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        PetType savedDogPetType = petTypeService.save(dog);
+
+        PetType cat = new PetType();
+        cat.setName("Cat");
+        PetType savedCatPetType = petTypeService.save(cat);
+
+
         Owner owner1 = new Owner();
         owner1.setFirstName("Terry");
         owner1.setLastName("Davis");
