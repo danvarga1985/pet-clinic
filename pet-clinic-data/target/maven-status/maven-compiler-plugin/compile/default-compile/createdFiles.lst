@@ -1,10 +1,16 @@
+daniel/varga/petclinic/services/SpecialityService.class
 daniel/varga/petclinic/services/map/PetServiceMap.class
+daniel/varga/petclinic/model/Visit.class
 daniel/varga/petclinic/model/Pet.class
+daniel/varga/petclinic/model/Speciality.class
 daniel/varga/petclinic/services/OwnerService.class
 daniel/varga/petclinic/services/map/AbstractMapService.class
+daniel/varga/petclinic/services/map/SpecialityServiceMap.class
+daniel/varga/petclinic/services/PetTypeService.class
 daniel/varga/petclinic/services/map/OwnerServiceMap.class
 daniel/varga/petclinic/model/Vet.class
 daniel/varga/petclinic/model/PetType.class
+daniel/varga/petclinic/services/map/PetTypeServiceMap.class
 daniel/varga/petclinic/model/Person.class
 daniel/varga/petclinic/services/map/VetServiceMap.class
 daniel/varga/petclinic/model/Owner.class
