@@ -76,9 +76,9 @@ public class DataInitializer implements CommandLineRunner {
         Owner owner2 = new Owner();
         owner2.setFirstName("Sylvester");
         owner2.setLastName("Matuska");
-        owner1.setAddress("14 Kossuth");
-        owner1.setCity("Kisoroszi");
-        owner1.setPhone("32132154");
+        owner2.setAddress("14 Kossuth");
+        owner2.setCity("Kisoroszi");
+        owner2.setPhone("32132154");
 
         Pet sylvestersCat = new Pet();
         sylvestersCat.setPetType(savedCatPetType);
