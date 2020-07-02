@@ -9,7 +9,6 @@ import java.util.Set;
 @Setter
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name = "owners")
 public class Owner extends Person {
@@ -34,6 +33,9 @@ public class Owner extends Person {
         this.address = address;
         this.city = city;
         this.phone = phone;
-        this.pets = pets;
+
+        if (pets != null) {
+            this.pets = pets;
+        }
     }
 }
