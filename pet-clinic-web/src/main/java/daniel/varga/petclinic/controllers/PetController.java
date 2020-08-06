@@ -3,7 +3,6 @@ package daniel.varga.petclinic.controllers;
 import daniel.varga.petclinic.model.Owner;
 import daniel.varga.petclinic.model.PetType;
 import daniel.varga.petclinic.services.OwnerService;
-import daniel.varga.petclinic.services.PetService;
 import daniel.varga.petclinic.services.PetTypeService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.WebDataBinder;
