@@ -7,6 +7,7 @@ import daniel.varga.petclinic.services.OwnerService;
 import daniel.varga.petclinic.services.PetService;
 import daniel.varga.petclinic.services.PetTypeService;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.util.StringUtils;
@@ -68,7 +69,7 @@ public class PetController {
         if (aResult.hasErrors()) {
             aModel.put("pet", aPet);
 
-            return  VIEWS_PETS_CREATE_OR_UPDATE_FORM;
+            return VIEWS_PETS_CREATE_OR_UPDATE_FORM;
         } else {
             petService.save(aPet);
 

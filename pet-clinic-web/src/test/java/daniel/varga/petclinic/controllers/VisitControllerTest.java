@@ -22,7 +22,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -94,7 +93,7 @@ class VisitControllerTest {
     void processNewVisitForm() throws Exception {
         mockMvc.perform(post(visitsUri)
                 .contentType(MediaType.APPLICATION_FORM_URLENCODED)
-                .param("date","2018-11-11")
+                .param("date", "2018-11-11")
                 .param("description", YET_ANOTHER_VISIT_DESCRIPTION))
                 .andExpect(status().is3xxRedirection())
                 .andExpect(view().name(REDIRECT_OWNERS_1))

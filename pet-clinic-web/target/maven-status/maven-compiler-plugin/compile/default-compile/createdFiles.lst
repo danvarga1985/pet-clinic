@@ -1,5 +1,8 @@
 daniel/varga/petclinic/bootstrap/DataInitializer.class
 daniel/varga/petclinic/controllers/OwnerController.class
 daniel/varga/petclinic/controllers/IndexController.class
+daniel/varga/petclinic/controllers/VisitController.class
+daniel/varga/petclinic/formatters/PetTypeFormatter.class
 daniel/varga/petclinic/controllers/VetController.class
 daniel/varga/petclinic/PetClinicApplication.class
+daniel/varga/petclinic/controllers/PetController.class

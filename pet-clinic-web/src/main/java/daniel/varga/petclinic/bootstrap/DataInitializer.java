@@ -71,6 +71,13 @@ public class DataInitializer implements CommandLineRunner {
         terrysDog.setBirthDate(LocalDate.now());
         owner1.getPets().add(terrysDog);
 
+        Pet terrysCat = new Pet();
+        terrysCat.setPetType(savedCatPetType);
+        terrysCat.setOwner(owner1);
+        terrysCat.setName("Job");
+        terrysCat.setBirthDate(LocalDate.now());
+        owner1.getPets().add(terrysCat);
+
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
